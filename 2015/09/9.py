@@ -17,7 +17,7 @@ for distance in distances:
 
 route_lengths = set()
 
-for route in permutations(locations, len(locations)):
+for route in permutations(locations):
     distance = 0
     for i in range(1, len(route)):
         distance += locations[route[i-1]][route[i]]
