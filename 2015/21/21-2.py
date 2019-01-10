@@ -81,7 +81,7 @@ while result:
     player = Character(100, 0, 0)
     comb = equipment_combs.pop(0)
     equip(player, comb)
-    boss = Character(103, 9, 2) # puzzle_input
+    boss = Character(103, 9, 2) # puzzle input
     result = match(player, boss)
 
 print(cost_(comb))
