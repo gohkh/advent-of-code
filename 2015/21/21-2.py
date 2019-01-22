@@ -8,9 +8,7 @@ class Character():
 
     def attack(self, opponent):
         damage = self.damage - opponent.armor
-        if damage < 1:
-            damage = 1
-        opponent.HP -= damage
+        opponent.HP -= max(1, damage)
 
 weapons = {"Dagger": {"cost": 8, "damage": 4, "armor": 0},
             "Shortsword": {"cost": 10, "damage": 5, "armor": 0},
